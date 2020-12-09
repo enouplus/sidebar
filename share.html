@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARE MY LINK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css" integrity="sha512-OD0ScwZAE5PCg4nATXnm8pdWi0Uk0Pp2XFsFz1xbZ7xcXvapzjvcxxHPeTZKfMjvlwwl4sGOvgJghWF2GRZZDw==" crossorigin="anonymous" />
+</head>
+<body>
+    
+
+    <button class="ui fluid facebook button">
+        <i class="facebook icon"></i>
+        Facebook
+      </button>
+      <button class="ui fluid twitter button">
+        <i class="twitter icon"></i>
+        Twitter
+      </button>
+      <button class="ui fluid google plus button">
+        <i class="google plus icon"></i>
+        Google Plus
+      </button>
+      <button class="ui fluid vk button">
+        <i class="vk icon"></i>
+        VK
+      </button>
+      <button class="ui linkedin button">
+        <i class="linkedin icon"></i>
+        LinkedIn
+      </button>
+      <button class="ui instagram button">
+        <i class="instagram icon"></i>
+        Instagram
+      </button>
+      <button class="ui youtube button">
+        <i class="youtube icon"></i>
+        YouTube
+      </button>
+
+    <script>
+        var getUrlParameter = function getUrlParameter(sParam) 
+        {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) 
+            {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+        };
+    </script>
+
+</body>
+</html>
