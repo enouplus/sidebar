@@ -1,1 +1,1 @@
-# sidebar
+# sidebar for all projects
