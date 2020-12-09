@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppBar</title>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/enouplus/fonts/d4ae824a626521372f6f90f38eea822d27e9798b/lato.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/enouplus/bootstrap-versions/rytplays-root.min.css">
+    <link rel="stylesheet" href="https://rawcdn.githack.com/enouplus/icon-pack/4920b34c7707ae38f37c16278f355be49b287073/career-icons/icons.css">
+    <link rel="stylesheet" href="atnbar.css">
+</head>
+<body>
+
+    <div class="abar">
+        <div class="tbar">
+            <div class="tbar-content">
+                <div id="toggler" onclick="show_nbar();" class="ic ic-menu"></div>
+                <a class="tbar-brand" href=""><b>RYTPLAYS JOBS</b></a>
+            </div>
+            <div class="tbar-content">
+                <a href="" class="ic ic-home"></a>
+                <a href="" class="ic ic-share"></a>
+                <div><b>HOME</b></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="overlay" class="overlay" onclick="hide_nbar();"></div>
+    <nav id="nbar" class="nbar lscroll">
+        <div class="nbar-links">
+            <a href="">ಸರ್ಕಾರಿ ಉದ್ಯೋಗಗಳು</a>
+            <a href="">ರಾಜ್ಯ ಸರ್ಕಾರಿ ಉದ್ಯೋಗ&nbsp;ಉದ್ಯೋಗ</a> 
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+        </div>
+    </nav>
+
+
+    <script>
+        const toggler=document.getElementById("toggler");
+        const nbar=document.getElementById("nbar");
+        const overlay=document.getElementById("overlay");
+        function show_nbar()
+        {
+            toggler.setAttribute("class","ic ic-close");
+            nbar.style.display="block";
+            overlay.style.display="block";
+            toggler.onclick=function(){hide_nbar();}
+        }
+        function hide_nbar()
+        {
+            toggler.setAttribute("class","ic ic-menu");
+            nbar.style.display="none";
+            overlay.style.display="none";
+            toggler.onclick=function(){show_nbar();}
+        }
+    </script>
+
+</body>
+</html>
